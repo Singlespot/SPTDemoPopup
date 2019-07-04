@@ -1,0 +1,20 @@
+
+
+
+"inUseMessage" = "DemoPopup needs your location while in use to offer you great features";
+"alwaysImmediatlyMessage" = "DemoPopup needs your location ALWAYS to offer you great features so please select Allow Always in the following popup";
+"alwaysAfterInUseMessage" = "DemoPopup needs always location in addition to in use !";
+"retryMessage" = "DemoPopup already asked you, but it really need your location to offer you great features";
+"retryToSettingsMessage" = "DemoPopup has been denied location, but needs your location to offer you great features. Click settings to enable again.";
+
+"inUseTitle" = "Location in use Alert !";
+"alwaysImmediatlyTitle" = "Choose ALWAYS please";
+"alwaysAfterInUseTitle" = "more location please";
+"retryTitle" = "Shall we retry ?";
+"retryToSettingsTitle" = "Please do not deny us again";
+
+"okButtonTitle" = "Ok";
+"okToSettingsButtonTitle" = "Settings";
+"cancelButtonTitle" = "Later";
+"cancelToSettingsButtonTitle" = "No way";
+"lastCancelButtonTitle" = "No thanks";

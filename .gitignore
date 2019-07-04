@@ -1,0 +1,25 @@
+Pods/Local Podspecs/SPTProximityKit.podspec.json
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/quentin.xcuserdatad/xcschemes/Pods-SPTDemoPopup.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/quentin.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/SPTProximityKit/SPTProximityKit.framework/Headers
+Pods/SPTProximityKit/SPTProximityKit.framework/SPTProximityKit
+Pods/SPTProximityKit/SPTProximityKit.framework/Modules/module.modulemap
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/Current
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/SPTProximityKit
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/Headers/SPTCustomLocationPopup.h
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/Headers/SPTLocationPopupConfiguration.h
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/Headers/SPTProximityKit-umbrella.h
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/Headers/SPTProximityKit.h
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/Headers/SPTProximityManager.h
+Pods/SPTProximityKit/SPTProximityKit.framework/Versions/A/Headers/SPTProximityManagerMode.h
+Pods/Target Support Files/Pods-SPTDemoPopup/Info.plist
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup-acknowledgements.markdown
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup-acknowledgements.plist
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup-dummy.m
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup-frameworks.sh
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup-resources.sh
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup-umbrella.h
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup.debug.xcconfig
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup.modulemap
+Pods/Target Support Files/Pods-SPTDemoPopup/Pods-SPTDemoPopup.release.xcconfig
