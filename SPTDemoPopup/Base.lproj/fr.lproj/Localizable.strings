@@ -1,1 +1,19 @@
 
+
+"inUseMessage" = "DemoPopup aimerait accéder a votre position lorsque vous utilisez l'app";
+"alwaysImmediatlyMessage" = "DemoPopup aimerait vraiment avoir votre position meme lorsque vous n'utilisez pas l'app, alors choisissez toujours svp";
+"alwaysAfterInUseMessage" = "DemoPopup aimerait avoir votre position";
+"retryMessage" = "DemoPopup vous repropose de partager votre position";
+"retryToSettingsMessage" = "La permission de location à été retirée. Devrions nous ouvrir les parametres et choisir \"toujours\"";
+
+"inUseTitle" = "Permission d'utiliser le GPS quand vous utilisez l'app";
+"alwaysImmediatlyTitle" = "Choisissez TOUJOURS svp";
+"alwaysAfterInUseTitle" = "Votre position?";
+"retryTitle" = "Rééssayons...";
+"retryToSettingsTitle" = "Merci de nous redonner votre position";
+
+"okButtonTitle" = "Ok";
+"okToSettingsButtonTitle" = "Parametres";
+"cancelButtonTitle" = "Plus tard";
+"cancelToSettingsButtonTitle" = "Non merci";
+"lastCancelButtonTitle" = "Non merci !";
