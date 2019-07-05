@@ -17,7 +17,9 @@ class LocationPopup: SPTCustomLocationPopup {
     @IBOutlet weak var buttonOk: UIButton!
     @IBOutlet weak var buttonCancel: UIButton!
     
-
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         super.messageLabel = self.labelMessage
@@ -53,15 +55,17 @@ class LocationPopup: SPTCustomLocationPopup {
             
             i += 1
         }
+        
+        self.alpha = 0
+        UIView.animate(withDuration: 0.3*animMultiplier, animations: {
+            self.alpha = 1
+        }, completion: nil)
+    
     }
     
     override func hideWithAnimation() {
+
         let views = [labelTitle, labelMessage, buttonOk, buttonCancel];
-        
-        for view in views {
-            view?.transform = CGAffineTransform(translationX: 0, y: -90)
-            view?.alpha = 0
-        }
         
         var i = 0
         for view in views {
@@ -69,11 +73,12 @@ class LocationPopup: SPTCustomLocationPopup {
                 UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.2, animations: {
                     view?.transform = CGAffineTransform(translationX: 0, y: 90/7)
                 })
-                UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.2, animations: {
+                UIView.addKeyframe(withRelativeStartTime: 0.2, relativeDuration: 0.8, animations: {
                     view?.transform = CGAffineTransform(translationX: 0, y: -90)
                     view?.alpha = 0
                 })
             }, completion: nil)
+            i += 1
         }
         
         UIView.animate(withDuration: 0.8, animations: {
@@ -81,7 +86,7 @@ class LocationPopup: SPTCustomLocationPopup {
         }) { (finished) in
             self.removeFromSuperview()
         }
-        i += 1
+        
     }
 
 }

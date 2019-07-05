@@ -18,12 +18,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func startRequestLocationProcessAction(_ sender: Any) {
+        print("[SPTProximityManager requestLocationAuthorizations] only work one time when SPTProximityManager mode is onDemand")
         SPTProximityManager.requestLocationAuthorizations()
     }
     
     @IBAction func userInputRequestLocation(_ sender: Any) {
         SPTProximityManager.onUserInputRequestAlwaysAuthorization { (status) in
-            print("on User Input Request Always Authorization -> status : %d", status)
+            print("on User Input Request Always Authorization -> status : \(status)")
         }
     }
     

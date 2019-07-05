@@ -15,6 +15,7 @@
 		660E118022CE2732009A36EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E117E22CE2732009A36EF /* LaunchScreen.storyboard */; };
 		66CEF2A022CE4D5000F827ED /* LocationPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CEF29F22CE4D5000F827ED /* LocationPopup.xib */; };
 		66CEF2A222CE4D6400F827ED /* LocationPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CEF2A122CE4D6400F827ED /* LocationPopup.swift */; };
+		66CEF2A322CF3D5700F827ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66CEF29C22CE49A800F827ED /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CEF2A322CF3D5700F827ED /* Localizable.strings in Resources */,
 				660E118022CE2732009A36EF /* LaunchScreen.storyboard in Resources */,
 				660E117D22CE2732009A36EF /* Assets.xcassets in Resources */,
 				660E117B22CE2730009A36EF /* Main.storyboard in Resources */,

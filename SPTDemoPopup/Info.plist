@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>SPTDemoPopup would like to access your location data to customize your experience</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>SPTDemoPopup would like to access your location data to customize your experience</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>SPTDemoPopup would like to access your location data to customize your experience</string>
 </dict>
 </plist>

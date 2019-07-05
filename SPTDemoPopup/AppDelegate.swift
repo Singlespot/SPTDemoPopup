@@ -41,8 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SPTProximityManager.setCustomLocationPopup(popup)
         }
         
-        
-        SPTProximityManager.setApiKey(<Your api key>, secret: <Your api key>, locationMode: .serverBased, isCMP: false)
+        SPTProximityManager.setApiKey("Api Key", secret: "Api secret", locationMode: .serverBased, isCMP: false)
         return true
     }
 
