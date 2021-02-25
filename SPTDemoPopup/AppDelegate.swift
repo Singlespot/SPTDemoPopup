@@ -19,21 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let conf = SPTLocationPopupConfiguration()
 
         conf.inUseMessage =  NSLocalizedString("inUseMessage", comment: "")
-        conf.alwaysImmediatlyMessage = NSLocalizedString("alwaysImmediatlyMessage", comment: "")
-        conf.alwaysAfterInUseMessage = NSLocalizedString("alwaysAfterInUseMessage", comment: "")
-        conf.retryMessage = NSLocalizedString("retryMessage", comment: "")
-        conf.retryToSettingsMessage = NSLocalizedString("retryToSettingsMessage", comment: "")
+        conf.alwaysMessage = NSLocalizedString("alwaysImmediatlyMessage", comment: "")
+        conf.toSettingsMessage = NSLocalizedString("retryMessage", comment: "")
         
         conf.inUseTitle = NSLocalizedString("inUseTitle", comment: "")
-        conf.alwaysImmediatlyTitle = NSLocalizedString("alwaysImmediatlyTitle", comment: "")
-        conf.alwaysAfterInUseTitle = NSLocalizedString("alwaysAfterInUseTitle", comment: "")
-        conf.retryTitle = NSLocalizedString("retryTitle", comment: "")
-        conf.retryToSettingsTitle = NSLocalizedString("retryToSettingsTitle", comment: "")
+        conf.alwaysTitle = NSLocalizedString("alwaysImmediatlyTitle", comment: "")
+        conf.toSettingsTitle = NSLocalizedString("retryTitle", comment: "")
         
         conf.okButtonTitle = NSLocalizedString("okButtonTitle", comment: "")
         conf.okToSettingsButtonTitle = NSLocalizedString("okToSettingsButtonTitle", comment: "")
         conf.cancelButtonTitle = NSLocalizedString("cancelButtonTitle", comment: "")
-        conf.cancelToSettingsButtonTitle = NSLocalizedString("cancelToSettingsButtonTitle", comment: "")
         conf.lastCancelButtonTitle = NSLocalizedString("lastCancelButtonTitle", comment: "")
         
         
@@ -41,7 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SPTProximityManager.setCustomLocationPopup(popup)
         }
         
-        SPTProximityManager.setApiKey("Api Key", secret: "Api secret", locationMode: .serverBased, isCMP: false)
+        SPTProximityManager.setUseLocationPrepopup(true)
+        SPTProximityManager.setLocationMode(.serverBased)
+    
+        SPTProximityManager.setApiKey(<YOUR_API_KEY>, secret: <YOUR_API_SECRET>)
         return true
     }
 

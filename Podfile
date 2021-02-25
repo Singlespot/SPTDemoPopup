@@ -6,7 +6,7 @@ target 'SPTDemoPopup' do
   use_frameworks!
 
   # Pods for SPTDemoPopup
-  pod 'SPTProximityKit', :git => 'https://User name:Password@sdk.singlespot.com/cocoapods/SPTProximityKit.git'
+  pod 'SPTProximityKit', :git => 'https://<USER_NAME>:<PASSWORD>@sdk.singlespot.com/cocoapods/SPTProximityKit.git'
 
 
 end
