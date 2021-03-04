@@ -1,5 +1,5 @@
 //
-//  LocationPopup.swift
+//  IDFAPopup.swift
 //  SPTDemoPopup
 //
 //  Created by Quentin Beaudouin on 04/07/2019.
@@ -10,7 +10,7 @@ import UIKit
 
 import SPTProximityKit
 
-class LocationPopup: SPTCustomPopup {
+class IDFAPopup: SPTCustomPopup {
     
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelMessage: UILabel!

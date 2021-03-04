@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func startRequestLocationProcessAction(_ sender: Any) {
-        print("[SPTProximityManager requestLocationAuthorizations] only work one time when SPTProximityManager mode is onDemand")
+        print("[SPTProximityManager requestLocationAuthorizations] only work one time when SPTProximityManager locationMode is onDemand")
         SPTProximityManager.requestLocationAuthorizations()
     }
     
@@ -27,6 +27,12 @@ class ViewController: UIViewController {
             print("on User Input Request Always Authorization -> status : \(status)")
         }
     }
+    
+    @IBAction func startIDFARequestProccessAction(_ sender: Any) {
+        print("[SPTProximityManager requestLocationAuthorizations] only work one time when SPTProximityManager IDFARequestMode is onDemand")
+        SPTProximityManager.requestIDFAAuthorizations()
+    }
+    
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

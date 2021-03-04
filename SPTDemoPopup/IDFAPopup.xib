@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IDFAPopup" customModule="SPTDemoPopup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHQ-yn-3nq" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-uf-9nn">
+                            <rect key="frame" x="24" y="109" width="366" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hED-nH-FW8">
+                            <rect key="frame" x="50" y="160" width="314" height="542"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="Symbol"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="message">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="18" name="LucidaGrande"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <color key="highlightedColor" white="0.0" alpha="0.46561964900000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wv8-9A-qGN">
+                            <rect key="frame" x="20" y="736" width="374" height="50"/>
+                            <color key="backgroundColor" red="0.43747003299673803" green="0.33483678059449096" blue="0.12570882698338731" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="qbG-Mj-iUP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" title="Ok Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-9N-CGO">
+                            <rect key="frame" x="20" y="796" width="374" height="50"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="QUc-As-SQm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            <state key="normal" title="No Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.27273869503219145" green="0.39302481638536674" blue="0.43747003299673803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="hED-nH-FW8" firstAttribute="leading" secondItem="mHQ-yn-3nq" secondAttribute="leading" constant="50" id="1nC-Ha-Dg5"/>
+                        <constraint firstItem="Wv8-9A-qGN" firstAttribute="leading" secondItem="mHQ-yn-3nq" secondAttribute="leading" constant="20" id="C2x-kL-B9e"/>
+                        <constraint firstAttribute="trailing" secondItem="hED-nH-FW8" secondAttribute="trailing" constant="50" id="Dbs-ti-nik"/>
+                        <constraint firstItem="zAq-9N-CGO" firstAttribute="top" secondItem="Wv8-9A-qGN" secondAttribute="bottom" constant="10" id="Nos-et-AuD"/>
+                        <constraint firstItem="zAq-9N-CGO" firstAttribute="centerX" secondItem="Wv8-9A-qGN" secondAttribute="centerX" id="OfX-Xu-MkA"/>
+                        <constraint firstAttribute="trailing" secondItem="Wv8-9A-qGN" secondAttribute="trailing" constant="20" id="Ruf-eU-oig"/>
+                        <constraint firstItem="Wv8-9A-qGN" firstAttribute="top" secondItem="hED-nH-FW8" secondAttribute="bottom" constant="34" id="SMf-5W-jYy"/>
+                        <constraint firstAttribute="bottom" secondItem="zAq-9N-CGO" secondAttribute="bottom" constant="50" id="ZUx-Vb-D46"/>
+                        <constraint firstItem="zAq-9N-CGO" firstAttribute="width" secondItem="Wv8-9A-qGN" secondAttribute="width" id="dWG-Jt-Gn3"/>
+                        <constraint firstItem="EVJ-uf-9nn" firstAttribute="centerX" secondItem="mHQ-yn-3nq" secondAttribute="centerX" id="fBJ-Zi-4dl"/>
+                        <constraint firstItem="EVJ-uf-9nn" firstAttribute="leading" secondItem="mHQ-yn-3nq" secondAttribute="leading" constant="24" id="kaj-kc-eB2"/>
+                        <constraint firstItem="hED-nH-FW8" firstAttribute="top" secondItem="EVJ-uf-9nn" secondAttribute="bottom" constant="22" id="nvW-gS-1rw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mHQ-yn-3nq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DIt-yb-XIO"/>
+                <constraint firstItem="mHQ-yn-3nq" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="RCA-UY-d64"/>
+                <constraint firstAttribute="bottom" secondItem="mHQ-yn-3nq" secondAttribute="bottom" id="WZ0-A3-Guf"/>
+                <constraint firstItem="mHQ-yn-3nq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZE0-WL-pGj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="EVJ-uf-9nn" secondAttribute="top" constant="-65" id="wTO-4N-02C"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonCancel" destination="zAq-9N-CGO" id="2dD-9b-4fV"/>
+                <outlet property="buttonOk" destination="Wv8-9A-qGN" id="dxX-wT-nIO"/>
+                <outlet property="labelMessage" destination="hED-nH-FW8" id="1Ij-CO-oNZ"/>
+                <outlet property="labelTitle" destination="EVJ-uf-9nn" id="sY0-my-Y8g"/>
+            </connections>
+            <point key="canvasLocation" x="81" y="109"/>
+        </view>
+    </objects>
+</document>

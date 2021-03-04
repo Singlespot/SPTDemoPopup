@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		660E117B22CE2730009A36EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E117922CE2730009A36EF /* Main.storyboard */; };
 		660E117D22CE2732009A36EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660E117C22CE2732009A36EF /* Assets.xcassets */; };
 		660E118022CE2732009A36EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E117E22CE2732009A36EF /* LaunchScreen.storyboard */; };
+		66BE812625F0E66A00197B31 /* IDFAPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BE812425F0E66A00197B31 /* IDFAPopup.xib */; };
+		66BE812725F0E66A00197B31 /* IDFAPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE812525F0E66A00197B31 /* IDFAPopup.swift */; };
 		66CEF2A022CE4D5000F827ED /* LocationPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66CEF29F22CE4D5000F827ED /* LocationPopup.xib */; };
 		66CEF2A222CE4D6400F827ED /* LocationPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CEF2A122CE4D6400F827ED /* LocationPopup.swift */; };
 		66CEF2A322CF3D5700F827ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66CEF29C22CE49A800F827ED /* Localizable.strings */; };
@@ -28,6 +30,8 @@
 		660E118122CE2732009A36EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		660E118B22CE48BC009A36EF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		660E118C22CE48BC009A36EF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		66BE812425F0E66A00197B31 /* IDFAPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDFAPopup.xib; sourceTree = "<group>"; };
+		66BE812525F0E66A00197B31 /* IDFAPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDFAPopup.swift; sourceTree = "<group>"; };
 		66CEF29B22CE49A800F827ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		66CEF29D22CE49AE00F827ED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		66CEF29F22CE4D5000F827ED /* LocationPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationPopup.xib; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				66CEF29C22CE49A800F827ED /* Localizable.strings */,
 				66CEF2A122CE4D6400F827ED /* LocationPopup.swift */,
 				66CEF29F22CE4D5000F827ED /* LocationPopup.xib */,
+				66BE812525F0E66A00197B31 /* IDFAPopup.swift */,
+				66BE812425F0E66A00197B31 /* IDFAPopup.xib */,
 			);
 			path = SPTDemoPopup;
 			sourceTree = "<group>";
@@ -163,6 +169,7 @@
 			files = (
 				66CEF2A322CF3D5700F827ED /* Localizable.strings in Resources */,
 				660E118022CE2732009A36EF /* LaunchScreen.storyboard in Resources */,
+				66BE812625F0E66A00197B31 /* IDFAPopup.xib in Resources */,
 				660E117D22CE2732009A36EF /* Assets.xcassets in Resources */,
 				660E117B22CE2730009A36EF /* Main.storyboard in Resources */,
 				66CEF2A022CE4D5000F827ED /* LocationPopup.xib in Resources */,
@@ -220,6 +227,7 @@
 			files = (
 				66CEF2A222CE4D6400F827ED /* LocationPopup.swift in Sources */,
 				660E117822CE2730009A36EF /* ViewController.swift in Sources */,
+				66BE812725F0E66A00197B31 /* IDFAPopup.swift in Sources */,
 				660E117622CE2730009A36EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        //TODO: change here to try .onDemand
+        SPTProximityManager.setLocationMode(.serverBased)
+        
+        //TODO: change here to try .onDemand
+        SPTProximityManager.setIDFARequestMode(.serverBased)
+    
+        SPTProximityManager.setApiKey(YOUR_API_KEY, secret: YOUR_API_SECRET)
+        return true
+    }
+    
+    func setupLocationPrepopup() {
+        
         let conf = SPTLocationPopupConfiguration()
 
         conf.inUseMessage =  NSLocalizedString("inUseMessage", comment: "")
@@ -32,15 +44,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         conf.lastCancelButtonTitle = NSLocalizedString("lastCancelButtonTitle", comment: "")
         
         
-        if let popup = Bundle.main.loadNibNamed("LocationPopup", owner: self, options: nil)?.first as? SPTCustomLocationPopup {
+        if let popup = Bundle.main.loadNibNamed("LocationPopup", owner: self, options: nil)?.first as? SPTCustomPopup {
             SPTProximityManager.setCustomLocationPopup(popup)
         }
         
         SPTProximityManager.setUseLocationPrepopup(true)
-        SPTProximityManager.setLocationMode(.serverBased)
+        
+        
+    }
     
-        SPTProximityManager.setApiKey(<YOUR_API_KEY>, secret: <YOUR_API_SECRET>)
-        return true
+    func setupIDFAPrepopup() {
+        
+        let conf = SPTIDFAPopupConfiguration()
+
+        conf.firstTimeMessage =  NSLocalizedString("IDFAfirstTimeMessage", comment: "")
+        conf.retryMessage = NSLocalizedString("IDFAretryMessage", comment: "")
+        conf.retryToSettingsMessage = NSLocalizedString("IDFAretryToSettingsMessage", comment: "")
+        
+        conf.firstTimeTitle = NSLocalizedString("IDFAfirstTimeTitle", comment: "")
+        conf.retryTitle = NSLocalizedString("IDFAretryTitle", comment: "")
+        conf.retryToSettingsTitle = NSLocalizedString("IDFAretryToSettingsTitle", comment: "")
+        
+        conf.okButtonTitle = NSLocalizedString("okButtonTitle", comment: "")
+        conf.okToSettingsButtonTitle = NSLocalizedString("okToSettingsButtonTitle", comment: "")
+        conf.cancelButtonTitle = NSLocalizedString("cancelButtonTitle", comment: "")
+        conf.lastCancelButtonTitle = NSLocalizedString("lastCancelButtonTitle", comment: "")
+        
+        
+        if let popup = Bundle.main.loadNibNamed("LocationPopup", owner: self, options: nil)?.first as? SPTCustomPopup {
+            SPTProximityManager.setCustomLocationPopup(popup)
+        }
+        
+        SPTProximityManager.setUseIDFAPrepopup(true)
+        
+        
     }
 
 }
