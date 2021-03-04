@@ -16,91 +16,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sptIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HEI-Sh-ZAz">
-                                <rect key="frame" x="147" y="104" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="HEI-Sh-ZAz" secondAttribute="height" multiplier="1:1" id="4fr-hJ-byG"/>
-                                    <constraint firstAttribute="width" constant="120" id="bJK-38-15r"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AZA-tP-b67">
-                                <rect key="frame" x="0.0" y="254" width="414" height="400.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-5f-i6f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbq-cc-Cgp">
-                                        <rect key="frame" x="30" y="0.0" width="354" height="162.5"/>
-                                        <string key="text">- Go to https://dashboard.singlespot.com/
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pew-Io-wj6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sptIcon" translatesAutoresizingMaskIntoConstraints="NO" id="HEI-Sh-ZAz">
+                                                <rect key="frame" x="147" y="10" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HEI-Sh-ZAz" secondAttribute="height" multiplier="1:1" id="4fr-hJ-byG"/>
+                                                    <constraint firstAttribute="width" constant="120" id="bJK-38-15r"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AZA-tP-b67">
+                                                <rect key="frame" x="0.0" y="150" width="414" height="500"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbq-cc-Cgp">
+                                                        <rect key="frame" x="30" y="0.0" width="354" height="162.5"/>
+                                                        <string key="text">- Go to https://dashboard.singlespot.com/
 - Find the section IDFA configuration
 - Find "SPTDemoPopup" in the list of your apps
 - Set "Display popup before system location request" to true
 - Do the same for Dashboard section "Location Configuration"</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UA-ax-DPO">
-                                        <rect key="frame" x="67" y="192.5" width="280" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UA-ax-DPO">
+                                                        <rect key="frame" x="67" y="225.5" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="2BK-01-kRW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                        <inset key="contentEdgeInsets" minX="18" minY="12" maxX="18" maxY="12"/>
+                                                        <state key="normal" title="RequestLocationAuthorizations">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="startRequestLocationProcessAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ton-L4-x1K"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0l-Jv-acI">
+                                                        <rect key="frame" x="67" y="339" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                        <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                                        <state key="normal" title="UserInputRequest">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="userInputRequestLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hE-Nt-Koa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qly-lV-rdq">
+                                                        <rect key="frame" x="67" y="452" width="280" height="48"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                        <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                                        <state key="normal" title="Request IDFA">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="startIDFARequestProccessAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcE-54-mor"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="z0l-Jv-acI" firstAttribute="height" secondItem="6UA-ax-DPO" secondAttribute="height" id="GwO-vK-0aP"/>
+                                                    <constraint firstItem="z0l-Jv-acI" firstAttribute="width" secondItem="6UA-ax-DPO" secondAttribute="width" id="MF6-FY-iUe"/>
+                                                    <constraint firstAttribute="height" constant="500" id="Swm-qs-Ief"/>
+                                                    <constraint firstItem="qly-lV-rdq" firstAttribute="height" secondItem="z0l-Jv-acI" secondAttribute="height" multiplier="0.96" id="Uux-du-xW6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jbq-cc-Cgp" secondAttribute="trailing" constant="30" id="gRH-V6-2CV"/>
+                                                    <constraint firstItem="qly-lV-rdq" firstAttribute="width" secondItem="z0l-Jv-acI" secondAttribute="width" id="hsC-yc-Bad"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="pes-P9-oyZ"/>
+                                                    <constraint firstItem="jbq-cc-Cgp" firstAttribute="leading" secondItem="AZA-tP-b67" secondAttribute="leading" constant="30" id="rQ7-L0-pMj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2BK-01-kRW"/>
+                                            <constraint firstItem="AZA-tP-b67" firstAttribute="leading" secondItem="pew-Io-wj6" secondAttribute="leading" id="486-lM-7zG"/>
+                                            <constraint firstItem="HEI-Sh-ZAz" firstAttribute="top" secondItem="pew-Io-wj6" secondAttribute="top" constant="10" id="CF0-we-HzC"/>
+                                            <constraint firstAttribute="bottom" secondItem="AZA-tP-b67" secondAttribute="bottom" id="Oqo-Kd-QVh"/>
+                                            <constraint firstItem="HEI-Sh-ZAz" firstAttribute="centerX" secondItem="pew-Io-wj6" secondAttribute="centerX" id="TKm-Io-sUl"/>
+                                            <constraint firstAttribute="trailing" secondItem="AZA-tP-b67" secondAttribute="trailing" id="mVK-YA-zBO"/>
+                                            <constraint firstItem="AZA-tP-b67" firstAttribute="top" secondItem="HEI-Sh-ZAz" secondAttribute="bottom" constant="20" id="zpE-rX-ipP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <inset key="contentEdgeInsets" minX="18" minY="12" maxX="18" maxY="12"/>
-                                        <state key="normal" title="RequestLocationAuthorizations">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startRequestLocationProcessAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ton-L4-x1K"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0l-Jv-acI">
-                                        <rect key="frame" x="67" y="272.5" width="280" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
-                                        <state key="normal" title="UserInputRequest">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="userInputRequestLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hE-Nt-Koa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qly-lV-rdq">
-                                        <rect key="frame" x="67" y="352.5" width="280" height="48"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                        <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
-                                        <state key="normal" title="Request IDFA">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startIDFARequestProccessAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcE-54-mor"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="z0l-Jv-acI" firstAttribute="height" secondItem="6UA-ax-DPO" secondAttribute="height" id="GwO-vK-0aP"/>
-                                    <constraint firstItem="z0l-Jv-acI" firstAttribute="width" secondItem="6UA-ax-DPO" secondAttribute="width" id="MF6-FY-iUe"/>
-                                    <constraint firstItem="qly-lV-rdq" firstAttribute="height" secondItem="z0l-Jv-acI" secondAttribute="height" multiplier="0.96" id="Uux-du-xW6"/>
-                                    <constraint firstAttribute="trailing" secondItem="jbq-cc-Cgp" secondAttribute="trailing" constant="30" id="gRH-V6-2CV"/>
-                                    <constraint firstItem="qly-lV-rdq" firstAttribute="width" secondItem="z0l-Jv-acI" secondAttribute="width" id="hsC-yc-Bad"/>
-                                    <constraint firstItem="jbq-cc-Cgp" firstAttribute="leading" secondItem="AZA-tP-b67" secondAttribute="leading" constant="30" id="rQ7-L0-pMj"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="width" secondItem="q6h-0j-JlC" secondAttribute="width" id="B37-fA-zm8"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="leading" secondItem="q6h-0j-JlC" secondAttribute="leading" constant="20" id="Ege-x4-0Ik"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="top" secondItem="q6h-0j-JlC" secondAttribute="top" id="GXl-PL-lDH"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="bottom" secondItem="q6h-0j-JlC" secondAttribute="bottom" id="XcP-br-0ir"/>
+                                    <constraint firstItem="q6h-0j-JlC" firstAttribute="trailing" secondItem="pew-Io-wj6" secondAttribute="trailing" id="YUy-Wg-kTq"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="width" secondItem="lS3-5f-i6f" secondAttribute="width" id="jvG-MT-zSa"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="trailing" secondItem="Bq6-oP-1Ab" secondAttribute="trailing" id="jxb-kC-AMy"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="leading" secondItem="Bq6-oP-1Ab" secondAttribute="leading" id="nj1-DA-1yC"/>
+                                    <constraint firstItem="pew-Io-wj6" firstAttribute="width" secondItem="Bq6-oP-1Ab" secondAttribute="width" id="x0z-k6-aRz"/>
                                 </constraints>
-                            </stackView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="q6h-0j-JlC"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Bq6-oP-1Ab"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AZA-tP-b67" firstAttribute="top" secondItem="HEI-Sh-ZAz" secondAttribute="bottom" constant="30" id="Jip-HP-jUr"/>
-                            <constraint firstItem="AZA-tP-b67" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b7f-gH-MWX"/>
-                            <constraint firstItem="HEI-Sh-ZAz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="jf3-ZL-QBG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AZA-tP-b67" secondAttribute="trailing" id="mRD-ya-Qk5"/>
-                            <constraint firstItem="HEI-Sh-ZAz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wyz-g3-SXG"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6vr-uQ-hMK"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="87S-by-w52"/>
+                            <constraint firstAttribute="bottom" secondItem="lS3-5f-i6f" secondAttribute="bottom" id="ETW-cQ-W7e"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MEk-9N-1kP"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q7n-bz-3WK"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xnd-iw-OXH"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fv7-75-dVI"/>
+                            <constraint firstItem="lS3-5f-i6f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="irm-9T-odl"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="38"/>
+            <point key="canvasLocation" x="79.710144927536234" y="37.5"/>
         </scene>
     </scenes>
     <resources>

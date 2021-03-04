@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        setupLocationPrepopup()
+        setupIDFAPrepopup()
+        
         //TODO: change here to try .onDemand
         SPTProximityManager.setLocationMode(.serverBased)
         
@@ -71,8 +74,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         conf.lastCancelButtonTitle = NSLocalizedString("lastCancelButtonTitle", comment: "")
         
         
-        if let popup = Bundle.main.loadNibNamed("LocationPopup", owner: self, options: nil)?.first as? SPTCustomPopup {
-            SPTProximityManager.setCustomLocationPopup(popup)
+        if let popup = Bundle.main.loadNibNamed("IDFAPopup", owner: self, options: nil)?.first as? SPTCustomPopup {
+            SPTProximityManager.setCustomIDFAPopup(popup)
         }
         
         SPTProximityManager.setUseIDFAPrepopup(true)
